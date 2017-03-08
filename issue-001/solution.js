@@ -1,16 +1,16 @@
 function dataTypeCheck(a) {
     // implement your solution here
 
-    if(typeof a === "undefined"){
+    if ( typeof a ==="string") {
+      results = "hello" + " "+ a;
+     return results;
+    }
+    else if(typeof a === "undefined"){
 
         return 0;
     }
     else if(isNaN(a)){
         return 0;
-    }
-    else if ( typeof a ==="string" && typeof Number(a) !== "number" ) {
-      results = "hello" + " "+ a;
-     return results;
     }
     else if(typeof a === "number"){
       results = a/2;
